@@ -29,9 +29,8 @@ function moneyChange() {
   }else {
     cent50 = Math.floor((money%100)/50);
     cent5 = Math.ceil((money%100)/5);
-    cent5 -= 10;
-    if (cent5 < 0) {
-      cent5 = 0;
+    if (cent50 >= 1) {
+      cent5 -= 10;
     }
     real = parseInt(money/100);
     txt = "RS 1,00 x " + real + "<br>R$ 0,50 x " + cent50 + "<br>R$ 0,05 x " + cent5; 

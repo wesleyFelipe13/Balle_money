@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css">
+  <title>Balle Money</title>
+</head>
+<body>
+  <div class="hero">
+    <h1>Balle Money</h1>
+    <div class="container">
+      <label for="price">Price</label>
+      <div class="container__iptbox">
+        <span>R$</span>
+        <input id="price" type="text" maxlength="7" step="0.01" min="0.01" placeholder="BRL xxxx.xx">
+      </div>
+      <label for="price">Amount</label>
+      <div class="container__iptbox">
+        <span>R$</span>
+        <input id="amount" type="text" maxlength="7" step="0.01" min="0.01" placeholder="BRL xxxx.xx">
+      </div>
+      <button onclick="moneyChange()">Change money</button>       
+      <p id="moneyTxt" class="c-money"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
